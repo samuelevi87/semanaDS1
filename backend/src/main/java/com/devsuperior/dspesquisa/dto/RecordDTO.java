@@ -17,10 +17,8 @@ public class RecordDTO implements Serializable {
     private Platform gamePlatform;
     private String genreName;
 
-
     public RecordDTO() {
     }
-    
 
     public RecordDTO(Record entity) {
         id = entity.getId();
@@ -150,16 +148,9 @@ public class RecordDTO implements Serializable {
 
     @Override
     public String toString() {
-        return "{" +
-            " id='" + getId() + "'" +
-            ", moment='" + getMoment() + "'" +
-            ", name='" + getName() + "'" +
-            ", age='" + getAge() + "'" +
-            ", gameTitle='" + getGameTitle() + "'" +
-            ", gamePlatform='" + getGamePlatform() + "'" +
-            ", genreName='" + getGenreName() + "'" +
-            "}";
+        return "{" + " id='" + getId() + "'" + ", moment='" + getMoment() + "'" + ", name='" + getName() + "'"
+                + ", age='" + getAge() + "'" + ", gameTitle='" + getGameTitle() + "'" + ", gamePlatform='"
+                + getGamePlatform() + "'" + ", genreName='" + getGenreName() + "'" + "}";
     }
 
-    
 }
